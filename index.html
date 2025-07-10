@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Lyrics Saver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Song Lyrics Saver</h1>
+    <section id="save-lyrics">
+        <h2>Save Lyrics</h2>
+        <form id="lyrics-form">
+            <label for="title">Song Title:</label>
+            <input type="text" id="title" name="title" required><br><br>
+            <label for="artist">Artist:</label>
+            <input type="text" id="artist" name="artist" required><br><br>
+            <label for="lyrics">Lyrics:</label>
+            <textarea id="lyrics" name="lyrics" rows="10" required></textarea><br><br>
+            <button type="submit">Save</button>
+        </form>
+    </section>
+    <section id="view-lyrics">
+        <h2>View Lyrics</h2>
+        <ul id="lyrics-list"></ul>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
